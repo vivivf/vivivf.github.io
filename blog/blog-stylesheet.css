@@ -1,0 +1,129 @@
+body{
+	background-color: #778899;
+}
+
+#container{
+	background: #FFFFFF;
+	width: 60em;
+	height: 100%;
+	margin:0 auto;
+	position: relative;
+}
+
+#header{
+	background-color: #1E90FF;
+	/*margin: auto;*/
+	/*I don't know why the header is not on the top of the page and has to be adjusted manually*/
+	margin-top: -1.4em;
+    width: 60em;
+}
+
+#header h1{
+	font-family: verdana,sans-serif;
+	color:white;
+	text-align: left;
+	padding: 0.5em;
+}
+
+#header ul{
+	background-color: #DCDCDC;
+	padding-bottom: 0.1em;
+}
+
+#header li{
+	display: inline-block;
+}
+
+#header img{
+    height: 2em;
+    width: 2em;
+	margin-bottom: -0.6em;
+}
+#img1{
+	margin-left: 25.3em;
+}
+
+.menu a{
+	color:white;
+	text-decoration: none;
+	font-size: 1.3em;
+	padding: 0.1em 0.8em;
+	border: 3px groove #A9A9A9;
+	background-color: #A9A9A9;
+	display: block;
+}
+
+.menu a:hover{
+	color: #00008B;
+	font-weight: bold;
+}
+
+#menu1{
+	margin-left: -2.3em;
+
+}
+
+
+#left{
+    float:left;
+    width:25%;
+}
+
+#left ul{
+margin-top: 3em;
+margin-left: 0.2em;
+padding: 0;
+width:12em;
+list-style-type: none;    
+}
+
+
+#right{
+    float:right;
+    width:75%;
+}
+h2{
+    font-family:verdana,sans-serif;
+    font-size: 20px;
+    text-align:left;
+    margin-top: 0.7em;
+    white-space: pre-line;
+}
+#date{
+    text-align:right;
+    margin-top: -45px;
+    margin-right: 20px;
+}
+
+#content {
+    margin: 10px;
+    border: 2px solid #778899;
+    white-space: pre-line;
+    background-color:#FFFFFF;
+    margin-left: -5px;
+    margin-top:-5px;
+    padding:0 0.5em;
+    text-align: justify;
+}
+
+#content img{
+	width: 60%;
+}
+
+#content span{
+	font-family: courier;
+}
+
+#right input{
+    padding: 10px 0 10px 0;
+    border:2px solid #778899;
+    margin-left: -5px;
+}
+
+#footer{
+	clear: both;
+    padding: 10px;
+    background-color: #DCDCDC;
+    bottom: -20px;
+    text-align: right;
+}
