@@ -27,6 +27,15 @@ body{
 	padding: 0.5em;
 }
 
+#header h1 a{
+		text-decoration: none;
+}
+
+#header h1 a:visited{
+	text-decoration: none;
+	color: white;
+}
+
 #header ul{
 	background-color: #DCDCDC;
 	padding-bottom: 0.5em;
@@ -61,7 +70,7 @@ body{
 	margin-bottom: -0.6em;
 }
 #img1{
-	margin-left: 25.3em;
+	margin-left: 13em;
 }
 
 #left{
