@@ -1,0 +1,97 @@
+	html{
+        background-color:#6495ED;
+        font-family: 'bitter',serif;
+    }
+
+	h1 {
+      text-align: center;
+      color: #B22222;
+    }
+
+    .name {
+      margin: auto;
+      font-style: italic;
+      text-align: center;
+      padding-bottom: 20px;
+      color: #E0FFFF;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    a:hover{
+      color:#B22222;
+    }
+
+    div{
+        background-color:#696969;
+        color:white;
+      }
+  
+    div p{
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .left1 {
+        border: 1px solid black;
+        float:left;
+        width: 40%;
+        margin-left: 60px;
+        padding: 5px;
+    }
+      
+    .right1 {
+        border: 1px solid black;
+        float:right;
+        width: 40%; 
+        margin-right: 60px;
+         padding: 5px;
+    }
+      
+    .left2 {
+        border: 1px solid black;
+        clear:right;
+        width: 40%;
+        float: left;
+        position: relative;
+        top: 50px;
+        left:60px;
+         padding: 5px; 
+    }
+      
+    .right2 {
+        border: 1px solid black;
+        width: 40%; 
+        height: auto;
+        float: right;
+        position: relative;
+        top: 50px;
+        right:60px;
+        padding: 5px;
+        padding-bottom: 40px;
+    }
+
+	#footer{
+		border: 1px solid black;
+        width: 90%; 
+        position: relative;
+        clear:both;
+        bottom: -100px;
+        padding: 10px;
+        left: 61px;
+        margin-bottom: 35px;
+        text-align: justify;
+	}
+
+    img{
+      /*position:fixed;*/
+      position: relative;
+      left:5px;
+      top:130px;
+      /*left:593px;
+      top: 290px;*/
+      width: 100px;
+      height: auto;
+    }
