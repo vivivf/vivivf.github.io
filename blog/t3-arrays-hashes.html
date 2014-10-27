@@ -33,13 +33,48 @@
            <h2>Array x Hash</h2>
            <h2 id="date">October 23, 2014</h2>
            <div id="content">
-              <p> 
+              <p>In many situations of our everyday life we see the need of organizing information. Some people have a list of contacts to easily find the phone number of a specific friend, others like to organize their music and books in alphabetical order and some cannot live without an agenda to list their daily activities. These are some few examples that show the importance of grouping and ordering information.
+
+As when we are programming we are in some way replicating the real life, we also have to deal with groups of information. In Ruby there are some ways to store and handle groups of data, but the most used are arrays and hashes. Both, the arrays and hashes, can store collections of objects (information) that are indexed by a key.  But what is the difference between hash and array?
 
 
-.....
+Arrays are ordered collections, which means the data is stored in a specific order and the key(index) is an integer. An array can be used, for instance, to implement the ordered list of books mentioned above. The first book would have the key/index 0 and the title "X", the second book would have the key/index 1 and the title "Y", and so on. Note that the array's index always start on 0 instead of starting on 1. 
+It is time to see how all of this looks in practice:
 
-  
+First of all I'll create an array, called books. Note that there are different ways to create the array, either by using the literal notation or the "Array.new" object's constructor. I'll go for the literal notation:
 
+<span>books = ["Learn to Program",  "Practical Object-Oriented Design in Ruby", "The Well-Grounded Rubyist"]</span>
+
+This command creates a container with string objects representing the books' titles indexed by a numerical and crescent key that starts from 0. So, if I want to access the second book of my list I would use the following command:
+
+<span>books[1]</span>
+
+This command will return: "Practical Object-Oriented Design in Ruby"
+
+The order of this data will never change, unless the objects intentionally are moved, removed or new ones added.  
+
+Now, let's talk a little bit about hash. Hash stores objects in pairs, where each pair has a key and a value. 
+The contact list mentioned before is a good example of how to use a hash. Our contact list has two pieces of information, the names and the phone numbers. In order to correlate these two things, we can create a collection of objects, where the phone numbers are the values and the names are the keys. In this way, it is possible to find a phone number by giving a name. 
+
+Take a look on how this would be implemented in Ruby:
+
+The first step is to create the hash. As the arrays, hashes can also be created using literal notation or the "Hash.new" object's constructor, I'll use the literal notation again:
+
+<span>contacts = { "Fred" => "650 713-6654", "Beatriz" => "650 102-1322", "Aline" => "650 564-9900" }</span>
+ 
+As you can see, the hash is created with the key/value pair. In this case the names are the keys and the phone numbers are the values.
+
+The contacts hash is now created and we can access its data running the following command:
+
+<span>contacts["Beatriz"]</span>
+
+This command is using the key name to look for the phone and it will return: "650 102-1322"
+
+The examples for array and hash mentioned in this blog are using string objects, but they can store any kind of object. 
+
+It is important to note that the cost of the algorithm to look for an alleatory item when the order is unknown it is much higher for the array, since in the worst case, all the positions have to be checked until the value is found. For the hash, in the other hand, the cost of the algorithm is always constant, equals to the key's hash function calculation.
+
+This was my brief explanation about the differences between arrays and hashes. They are similar, but they can have different applicability. See you next time!
               </p>
            </div>
            <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
