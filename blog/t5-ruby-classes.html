@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <title>Vivian Fialho</title>
+  </head>
+  <body>
+  	<div id="container">    
+  		<div id="header">
+           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+           <ul>
+               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
+               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
+               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+          </ul>     
+      </div>
+      <div id="left">
+          <ul>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
+          </ul>
+      </div>
+      <div id="right">
+           <h2>A little bit about Classes</h2>
+           <h2 id="date">November 9, 2014</h2>
+           <div id="content">
+              <p>In the real world we are surrounded by objects. Your computer is an object, your car is an object, your watch is an object. All the objects have their own characteristics and behaviors. Some objects are of the same kind and can be grouped together to form a category. The car is a good example. Your car, your wife's car and your neighbor's car belong to the category car. A car object will always have the following characteristics: maker, color, model name and so on. A car object will also always have some common actions/behaviors, such as: going forward, backing up, turning, stoping, changing gears, horning.
+
+Object oriented programming (OOP), as the name says, is based on the concept of objects. An object stores its state/characteristics in variables and exposes its behavior through methods. Using the car again as example, the brand would be an attribute stored in a variable and the action of horning would be the horn method. 
+
+As mentioned before, many objects have similar characteristics and behaviors and it makes sense to group them together. In OOP, the objects can be "grouped/categorized" by using classes. A class is a blueprint or a template to build/create objects. The class defines the common variables and methods of the objects which implement that same class. When an object is created, we say it is an instance of a class. An instance is a specific object built from a specific class. 
+
+Now that we have already talked about class, let's go back to our car example. The figure below shows how the real life object is mapped in terms of OOP. 
+
+<img src="http://vivivf.github.io/blog/imgs/class_img.png" />
+
+The car category is a class, that can have many different objects, like my_car, wife_car, neighbor_car. All these objects are instances of the car class, all of them have the variable color and all of them can horn through the method horn.  
+
+Note that instance variables are different from local variables. Instance variables live within a class instance, so as long as that instance exists, so will the instance variables. Instance variables can be accessed/referenced from any method of the class they belong to.
+
+Now it is time to see how the code for a Car class would look like. This an example of Ruby language.
+
+<span>class Car
+
+  def initialize(maker, color, model)
+    @maker = maker
+    @color = color
+    @model = model   
+  end
+
+  def horn
+    p “Beep-beep"
+  end
+
+end</span>
+
+The code above is creating the Class Car, initializing the instance variables and defining the method horn.
+
+Now, let's create a Car object:
+
+moms_car = Car.new("BMW", "black", "X1")
+my_car= Car.new("Hyundai", "white", "Elantra")
+
+Here we passed as arguments the value for the instance variables, that are the characteristics of the cars. 
+
+Now, what if I want to horn my_car? Just call the method for the object:
+
+<span>2.0.0-p451 :267 > my_car.horn
+"Beep-beep" </span>
+
+Cool, isn't? 
+
+This was my brief explanation about classes, there is a whole world to be explored about classes and objects, this is the very start! I hope you enjoyed the reading!  
+
+              </p>
+           </div>
+           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
+       </div>
+       <div id="footer">
+          <a href="#">Contact Me</a>
+       </div>
+  </div>
+  </body>
+</html>
+
