@@ -36,27 +36,49 @@
           </ul>
       </div>
       <div id="right">
-           <h2>Thinking style 
-            How to use it in your favor?</h2>
-           <h2 id="date">October 26, 2014</h2>
+           <h2>Class x Module</h2>
+           <h2 id="date">November 9, 2014</h2>
            <div id="content">
-              <p> During the preparation for starting my journey at Devbootcamp I took a test to identify my thinking style. The result showed that I'm a concrete sequential thinker, which is exactly what I was expecting.
+              <p>We have talked about classes last week but only to refresh our memory here is one of the definitions for class:
 
-According to the test, a concrete sequential thinker learns better in a structured environment, likes to follow directions and to work with a logical sequence. I totally see myself in this description. I also identify myself with some of the things that are considered hard for concrete sequential thinkers, such as dealing with abstract ideas and discussions that seem to have no specify point.
+"In object-oriented programming, a class is a construct that is used to create instances of itself - referred to as class instances, class objects, instance objects or simply objects. A class defines constituent members which enable its instances to have state and behavior."
 
-Some characteristics of my way of thinking can help me in the Devbootcamp journey and recognizing the ones that in some way could make my path harder is the first step to try to avoid a bad impact.
+Methods are similar to classes, which means they also enable objects to have behavior through the definition of methods, the difference is that unlike classes, modules don't have instances. An object and/or a class that includes a module, will have access to its methods and constants. 
+Modules can provide functionality across multiple classes and/or objects so, they are perfect to be used when objects from different classes have to implement the same behavior.
 
-The experience of the first 3 weeks of Phase 0 was very rich. I have worked with so many different people and it is really interesting to pay attention and analyze the behavior of each one. Each person has a different way of thinking and this contact allow us to learn from each other. 
+A good example is the Math module. It has constants, like Pi, and methods that define mathematical calculations, like sqrt(number), which returns the square foot of the specified number. The Math module can be used by class/object that includes it.
 
-I received a very nice feedback from someone who told me that my way of structuring the tasks and thinking in a logical sequence has helped him to organize his ideas and to be more effective when working on the challenges. It was really gratifying to hear this! I hope to keep helping people each day more.
+Let's see how a method is defined and how to include it. 
 
-I have also learned a lot from my classmates. Something that is hard for me is to use my imagination. I'm not the very creative kind of person and I got really amazed with the creativity of some people from this group. The week2, when we had to build our own website was really tough for me, but the pairing sessions helped me a lot. I felt inspired by some people's ideas which helped me to develop my own ideas. 
+<span>module FirstModule
+    def testing_module
+      p "Testing our first module"
+    end
+end</span>
 
-We all have a lot of things to learn, some things are harder to some people and easier to others and vice-versa, but we have to take advantage of having a rich mixture of skills and characteristics and learn from each other. 
+This is how a method definition looks like. It is very similar to the class, we only replaced the word "class" by "module"
 
-I believe people can change and develop new skills. This is what the growth intelligence mindset is about. It values the learning from failure. A growth intelligence mindset seeks for challenges and doesn't feel bad for failing. The failure is seen as part of the development and growth process.
+So now, we are going to include this method in a class:
 
-My strategy for the rest of the bootcamp will be based on the growth intelligence mindset. I know my weaknesses and I'll try to work on them by observing the people that inspires me and trying to learn from them. I know that sometimes I'll fail, but this is part of the game ;)
+<span>class ModuleTester
+    include FirstModule
+end</span>
+
+And finally, we'll create an instance of the class ModuleTester and try to call the method testing_module
+
+<span>module_test = ModuleTester.new
+module_test.testing_module</span>
+
+Here is the output:
+
+<span>2.0.0-p451 :543 > "Testing our first module"</span>
+
+As you can see, the module_test object can access the method testing_module.
+
+This is, of course, a very simple demonstration of the use of modules, but it serves to show that modules can expand considerably the set of messages to which an object can respond.
+
+As Ruby provides single inheritance, where a subclass is allowed only one parent superclass, modules play an important role when it comes to allowing the objects to have a broader scope.
+
               </p>
            </div>
            <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
