@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <title>Vivian Fialho</title>
+  </head>
+  <body>
+  	<div id="container">    
+  		<div id="header">
+           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+           <ul>
+               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
+               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
+               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+          </ul>     
+      </div>
+      <div id="left">
+          <ul>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Class x Module</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Stereotype Threads</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t7-JavaScript.html>Loops: Ruby x JavaScript</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c7-values.html>Thinking about values</a></li>
+          </ul>
+      </div>
+      <div id="right">
+           <h2>Loops: Ruby x JavaScript</h2>
+           <h2 id="date">November 21, 2014</h2>
+           <div id="content">
+              <p>
+This week we started to dive into JavaScript. Having spent the last four weeks working with Ruby I can say that they look very different to me.
+
+Ruby seems to be more intuitive and efficient. It provides a ton of methods that allow us to create small/concise codes for repetitive tasks. The problem that I see is that as beginners we should be able to understand the logic behind these built-in methods. When using ruby is really easy to get distracted by the powerful methods and the easiness of  implementing complex solutions that we forget what is really happening behind the scenes. What the method is doing? How it works? I'm pretty sure many people use the methods without understanding how they work.
+
+Unlike Ruby, JavaScript does not provide a bunch of built-in functionalities. If we compare the codes of JavaScript and Ruby to perform the same action, most probably the JavaScript code will be much longer. As a beginner, I don't think this is a bad thing, since I really like to understand what I'm doing and working with JavaScript make me feel that I'm going step by step to build the logic to get to a solution. 
+
+This is a superficial view of someone that is just start learning both of the languages, so maybe my opinion will change when I have more knowledge to analyze the differences. And don't get me wrong, I really love working with Ruby! I just don't hate JavaScript :)
+
+Now that I have already shared my general opinion about Ruby versus JavaScript, I would like to talk about the differences between them for one specific topic: loops. 
+
+Loops are used to perform repetitive tasks, so if you need to run the same code over and over again, this is the way to go. It is very common to use loops to iterate through collection objects, like array and hash. 
+
+Ruby provides a bunch of methods to iterate through collections and some of them have an implicit functionality, like <i>select</i> for instance, that allows to iterate through the collection and look for the items that met a specific condition. The method returns a new collection with the selected items. Take a look at the example bellow:
+
+<span>2.0.0-p451 :047 > my_sisters_name=["Nadja","Verusca","Natalia"]
+ => ["Nadja", "Verusca", "Natalia"]
+2.0.0-p451 :048 > my_sisters_name.select{|name| name[0]=="N"}
+ => ["Nadja", "Natalia"]</span>
+
+First I created an array with my sisters' names. Then, I selected only the names that started with "N". The select method returned an array containing only "Nadja" and "Natalia".
+
+This is only one of the methods that Ruby provides to iterate through collections. Just to name a few, <i>map, each, times and inject</i> are other examples.
+
+JavaScript, in the other hand, only supports two different types of loop: <i>while</i> and <i>for</i>. 
+
+The <i>while</i> loop is used when you need to repeat an action until a certain condition is met. So let's say you want to calculate the factorial of a number. The factorial of a number is is the product of all positive integers less than or equal to the number and the notation used to represent it is n!. So, 5! = 5*4*3*2*1. Check out how we can create a code to do this calculation using a loop.
+
+<span>var factorial = function(number){
+  result=1;
+  while (number>=1)
+  {
+        result = result*number;
+        number=number-1;
+  }
+  return result;
+}</span>
+
+Here we have created a function to be able to calculate the factorial for any number, but our objective is to focus on how the loop works.
+
+In this example the <i>while</i> loop will execute what is inside its block until number >= 1. So if we want to calculate the factorial of 3 the first iteration will check: is 3 >= 1?, as the condition is met the code inside the block {} is executed. When the number variable gets to 0 the condition will be evaluated to false and the program will get out of the loop. 
+
+Ruby also implements <i>while loop</i>. The syntax is a little different but the concept is the same.
+
+The </i>while</i> loop has a variation, that is called <i>do-while</i>. It also loops through a block of code while a specified condition is true, but it'll always execute at least once, since the condition is checked after the code is executed. Here is the <i>do-while</i> syntax:
+
+<span>do {
+  ...code to be executed
+} while (condition);</span>
+
+
+What about the <i>for</i> loop? <i>For</i> is useful when the same action has to be repeated a certain number of times. We can use the <i>for</i> loop to implement the factorial example, since we know how many times we need to execute the code to get the result. Here is the solution with the <i>for</i> loop:
+
+<span>var factorial = function(number){
+result=1;
+for (i=number;i>=1;i--)
+         result = result * i;
+return result;
+}</span>
+
+If we compare the two codes, we can see that the <i>for</i> loop is shorter. This is because the decrement of the variable is done inside of the <i>for</i> statement. 
+
+This specific example can be implemented with both <i>while</i> and <i>for</i>, but this is because we know that the code has to be executed n times. For cases that the condition to be evaluated has to return other things, like true or false, for instance, then only the <i>while</i> loop would work.
+
+The <i>for</i> loop also has a variation, that is the for in. It is used to loops through the properties of an object. Take a look at the example bellow:
+
+<span>var person = {name:"Rick", last_name:"Mayer", age:31}; 
+
+var x;
+for (x in person) 
+    console.log(person[x]);
+</span>
+Output:
+
+<span>Rick
+Mayer
+31</span>
+
+So, these are the loops supported by JavaScript. As mentioned before, Ruby has many more options, but all of them can be implemented with the JavaScript loops. The code will be much longer and you will have to spend more time writing it, but it is not impossible. 
+
+Just to finalize the post, let's implement the first example, that used the <i>select</i> ruby method, in Javascript.
+
+First we will create the same array:
+
+<span>var my_sisters_name=["Nadja","Verusca","Natalia"]</span>
+
+Next, we'll iterate through the array and find the names that start with "N":
+
+<span>result_array=[]
+ for (i=0;i < my_sisters_name.length;i++)
+  if(my_sisters_name[i].substring(0,1)=="N")
+    result_array.push(my_sisters_name[i]);
+console.log(result_array);
+</span>
+
+This code will give exactly the same result as: <span>my_sisters_name.select{|name| name[0]=="N"}</span>
+
+This is it for today! I hope the examples helped to clarify the differences between the Ruby and JavaScript loops.
+              </p>
+           </div>
+           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
+       </div>
+       <div id="footer">
+          <a href="#">Contact Me</a>
+       </div>
+  </div>
+  </body>
+</html>
+
