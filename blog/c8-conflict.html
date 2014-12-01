@@ -40,57 +40,23 @@
           </ul>
       </div>
       <div id="right">
-           <h2>A little bit about Classes</h2>
-           <h2 id="date">November 9, 2014</h2>
+           <h2>Handling Conflicts</h2>
+           <h2 id="date">November 30, 2014</h2>
            <div id="content">
-              <p>In the real world we are surrounded by objects. Your computer is an object, your car is an object, your watch is an object. All the objects have their own characteristics and behaviors. Some objects are of the same kind and can be grouped together to form a category. The car is a good example. Your car, your wife's car and your neighbor's car belong to the category car. A car object will always have the following characteristics: maker, color, model name and so on. A car object will also always have some common actions/behaviors, such as: going forward, backing up, turning, stoping, changing gears, horning.
+              <p>Some years ago I was on a business travel with a coworker that is also a very close friend. There was a holiday right after the day we were supposed to finish our job, so we decided to extend our stay to visit Paris. This is where the nightmare started. 
 
-Object oriented programming (OOP), as the name says, is based on the concept of objects. An object stores its state/characteristics in variables and exposes its behavior through methods. Using the car again as example, the brand would be an attribute stored in a variable and the action of horning would be the horn method. 
+We are very close friends, but we had never traveled together just the two of us. We have very different habits and this made the trip very difficult. 
+The first disagreement was about the hotel. I wanted to stay close to downtown even if I had to spend more money while he preferred a cheaper place, not so close to downtown but close to the subway. We decided for staying in the cheaper option. 
 
-As mentioned before, many objects have similar characteristics and behaviors and it makes sense to group them together. In OOP, the objects can be "grouped/categorized" by using classes. A class is a blueprint or a template to build/create objects. The class defines the common variables and methods of the objects which implement that same class. When an object is created, we say it is an instance of a class. An instance is a specific object built from a specific class. 
+When we got to Paris we found out that there was a full strike on subways and buses. We were far from downtown and if we canceled the hotel we wouldn't get any refund. We didn't have many choices, so we decided to stay in the hotel. 
+As there was no subway my initial plan was to take a cab to go to downtown, since we were more than 1 hour walking from there. When we asked in the front desk about the average price of a ride to downtown we wanted to cry, it was ridiculously expensive. Anyway, I was still willing to pay, since we would divide by 2, but my friend convinced me to go walking. At this time I thought, what else can go wrong? 
+Well, many other things went wrong during this trip. My friend loves museums and I like, but I don't want to spend my whole day staring at paints and sculptures. I really don't need to see every single piece of every session of the museum, and this is exactly what my friend did. 
 
-Now that we have already talked about class, let's go back to our car example. The figure below shows how the real life object is mapped in terms of OOP. 
+At the end of the day I was really tired and I felt I didn't do anything I enjoy. I just wanted to have a good dinner and go to the bed, but again the dinner was not what I was expecting since my friend preferred to eat in a very simple place to save money. After the dinner he suggested to come back to hotel walking and this was the last straw. I couldn't stand that situation anymore. I tried to avoid discussing with my friend the whole day, but at this point I was so pissed that I couldn't control my emotions. We discussed and it was really really bad. 
 
-<img src="http://vivivf.github.io/blog/imgs/class_img.png" />
+We went over all of this and we are still good friends but if I could I would change everything that I did since the travel planning. I avoided all the conflicts with my friend since the beginning but deep in my heart I was not happy with the decisions we made, so I got frustrated and that made me had a very tough discussion with him. 
 
-The car category is a class, that can have many different objects, like my_car, wife_car, neighbor_car. All these objects are instances of the car class, all of them have the variable color and all of them can horn through the method horn.  
-
-Note that instance variables are different from local variables. Instance variables live within a class instance, so as long as that instance exists, so will the instance variables. Instance variables can be accessed/referenced from any method of the class they belong to.
-
-Now it is time to see how the code for a Car class would look like. This an example of Ruby language.
-
-<span>class Car
-
-  def initialize(maker, color, model)
-    @maker = maker
-    @color = color
-    @model = model   
-  end
-
-  def horn
-    p “Beep-beep"
-  end
-
-end</span>
-
-The code above is creating the Class Car, initializing the instance variables and defining the method horn.
-
-Now, let's create a Car object:
-
-moms_car = Car.new("BMW", "black", "X1")
-my_car= Car.new("Hyundai", "white", "Elantra")
-
-Here we passed as arguments the value for the instance variables, that are the characteristics of the cars. 
-
-Now, what if I want to horn my_car? Just call the method for the object:
-
-<span>2.0.0-p451 :267 > my_car.horn
-"Beep-beep" </span>
-
-Cool, isn't? 
-
-This was my brief explanation about classes, there is a whole world to be explored about classes and objects, this is the very start! I hope you enjoyed the reading!  
-
+Today I see that avoiding the conflicts was not good for neither of us. We should have talked/discussed more about all the disagreements to find a balance, where both of us were satisfied with all the decisions. I learnt from this experience that it is important to try to be comfortable to express opinions and to handle conflicts in a good way.
               </p>
            </div>
            <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
