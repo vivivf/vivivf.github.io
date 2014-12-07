@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="my-stylesheet_blog.css">
     <title>Vivian Fialho</title>
   </head>
   <body>
-  	<div id="container">    
-  		<div id="header">
-           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
-           <ul>
-               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
-               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
-               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
-               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
-               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
-               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
-               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
-               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
-               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
-          </ul>     
-      </div>
-      <div id="left">
-          <ul>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Class x Module</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Stereotype Threads</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t7-JavaScript.html>Loops: Ruby x JavaScript</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c7-values.html>Thinking about values</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t8-tech.html>Regular Expressions</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c8-conflict.html>Handling Conflicts</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c9-questions.html>Asking good technical questions</a></li>
-          </ul>
-      </div>
-      <div id="right">
-           <h2>Asking good technical questions</h2>
-           <h2 id="date">December 03, 2014</h2>
-           <div id="content">
-              <p>The art of programming involves a lot of research, so knowing how to look and ask for information is crucial for someone who intends to work with software development.
+    <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+    <div class="nav">    
+      <div class="container">	
+        <ul class="nav nav-pills pull-left">
+          <li><a href=http://vivivf.github.io/about/index.html>About</a></li>
+          <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+          <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+          <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+          <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2</a></li>
+          <li><a href=http://vivivf.github.io/CheatSheet/cheatsheet.html>HTML Cheat Sheet</a></li>
+        </ul>
+<!--         <ul class="pull-right">
+          <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+          <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+          <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+          <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+        </ul>   -->   
+    	</div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h3>Asking good technical questions</h3>
+        <h5>December 03, 2014</h5>
+        <p>The art of programming involves a lot of research, so knowing how to look and ask for information is crucial for someone who intends to work with software development.</p>
 
-There are thousands of technical forums and blogs that have really good information. One example of that are the collaborative questions & answers sites, like stack overflow.com, that are very useful when used in the correct way. Well, "correct way" is a bit strong, but for taking advantage of these kind of resources, it is definitely important to follow some good practices. So, let's talk a little bit about how to make good questions.
+        <p>There are thousands of technical forums and blogs that have really good information. One example of that are the collaborative questions & answers sites, like stack overflow.com, that are very useful when used in the correct way. Well, "correct way" is a bit strong, but for taking advantage of these kind of resources, it is definitely important to follow some good practices. So, let's talk a little bit about how to make good questions.</p>
 
-In my opinion, the most important characteristics of a good question are: clarity and conciseness. Questions must be clear and concise, otherwise they can be misinterpreted.
+        <p>In my opinion, the most important characteristics of a good question are: clarity and conciseness. Questions must be clear and concise, otherwise they can be misinterpreted.</p>
 
-Considering a technical audience, here are some good practices that can be followed to formulate good questions:
-<ul>
-  <li>The question title is very important!!! It is the first thing that is read, so try to include relevant and specific information about your problem.</li>
-  <li>The paragraph following the title is the second more important part of the question. Here you have to explain your problem concisely. Keep in mind that the readers are probably busy people, so nobody wants to read 3 pages of text.</li>
-  <li>Always describe your environment. Language version, platform version, operational system and any other relevant information have to be included in the description. Remember to also include any constraint that you might have. </li>
-  <li>Explain which tests you have made, what were the results and what you are expecting. Do not assume that the readers know what is the expected outcome, even if looks obvious for you.</li>
-  <li>Provide sample code and data when applicable. Only remember that you don't need to copy and paste your entire program. Providing sample code helps others to reproduce your problem, but only if you make sure that you are giving the enough information, nothing more nothing less.</li>
-  <li>Provide sample code and data when applicable. Only remember that you don't need to copy and paste your entire program. Providing sample code helps others to reproduce your problem, but only if you make sure that you are giving the enough information, nothing more nothing less. </li>
-  <li>And last but not least, pay special attention to spelling, grammar and formatting. Many users of these sites are not english native speakers, as myself, so if you want to be understood, try to put some effort on writing a reasonable english. Formatting it is also very important, mainly for books of code. Always remember to indent the code.</li>
-</ul>The quality of these resources depend on all the users. When a question is well written the chance of having a good answer is high and everybody will benefit from that. So, let's try to always follow the good practices to keep the quality of this amazing resource.
-              </p>
-           </div>
-           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
-       </div>
-       <div id="footer">
-          <a href="#">Contact Me</a>
-       </div>
-  </div>
+        <p>Considering a technical audience, here are some good practices that can be followed to formulate good questions:</p>
+      
+          <p>&nbsp <b>*</b> The question title is very important!!! It is the first thing that is read, so try to include relevant and specific information about your problem.</p>
+          <p>&nbsp <b>*</b> The paragraph following the title is the second more important part of the question. Here you have to explain your problem concisely. Keep in mind that the readers are probably busy people, so nobody wants to read 3 pages of text.</p>
+          <p>&nbsp <b>*</b> Always describe your environment. Language version, platform version, operational system and any other relevant information have to be included in the description. Remember to also include any constraint that you might have. </p>
+          <p>&nbsp <b>*</b> Explain which tests you have made, what were the results and what you are expecting. Do not assume that the readers know what is the expected outcome, even if looks obvious for you.</p>
+          <p>&nbsp <b>*</b> Provide sample code and data when applicable. Only remember that you don't need to copy and paste your entire program. Providing sample code helps others to reproduce your problem, but only if you make sure that you are giving the enough information, nothing more nothing less.</p>
+          <p>&nbsp <b>*</b> Provide sample code and data when applicable. Only remember that you don't need to copy and paste your entire program. Providing sample code helps others to reproduce your problem, but only if you make sure that you are giving the enough information, nothing more nothing less. </p>
+          <p>&nbsp <b>*</b> And last but not least, pay special attention to spelling, grammar and formatting. Many users of these sites are not english native speakers, as myself, so if you want to be understood, try to put some effort on writing a reasonable english. Formatting it is also very important, mainly for books of code. Always remember to indent the code.</p>
+        
+        <p>The quality of these resources depend on all the users. When a question is well written the chance of having a good answer is high and everybody will benefit from that. So, let's try to always follow the good practices to keep the quality of this amazing resource.</p>
+        
+      </div> 
+    </div>
+    
+
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+              
+            <div class="col-md-8">
+              <p class="first">LOOKING FOR SOMETHING?</p>
+              <form class="navbar-form navbar-left second" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+              </form>
+            </div>
+
+            <div class="col-md-4">
+              <p class="first" id="custom">SOCIAL:</p>
+              <ul class="pull-rigth" id="custom2">
+                <a href=https://twitter.com/fialho_vivian><img src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+                <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+                <a href=https://github.com/vivivf><img src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+                <a href=https://www.facebook.com/vivian.fialho.1><img src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+              </ul> 
+            </div> 
+          </div>
+        </div>
+    </div>
+
   </body>
 </html>
-

@@ -19,7 +19,6 @@ h1 a:hover, a:visited{
 	font-size: 20px;
 }
 
-
 .nav .nav-pills > li > a {
 	color: #000080;
 }
@@ -31,18 +30,26 @@ h1 a:hover, a:visited{
     right: -20px;
 }*/
 
-
-.jumbotron .container .row .col-md-8 > p{
-	color: #2F4F4F;
-	font-size: 20px;
-	text-align: justify;
-	font-weight: bold;
-	font-family: "Palatino Linotype";
-}
-
-
 .jumbotron{
 	background-color: #DCDCDC;
+	margin-bottom: 10px;
+	padding-bottom:10px;
+}
+
+.jumbotron .title{
+	font-size: 23px;
+	color: #1E90FF;
+/*	font-family: verdana;*/
+	border-bottom: 4px double white;
+	padding-bottom: 5px;
+}
+
+.text > p{
+	font-size:15px;
+}
+
+.text >h3{
+	color:#000080;
 }
 
 .footer img{
@@ -80,6 +87,12 @@ h1 a:hover, a:visited{
 	left:20px;
 }
 
+.footer{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
 /*.footer{
 	font-size: 20px;
     text-align: right;
@@ -87,4 +100,3 @@ h1 a:hover, a:visited{
     right:30px;
     position: relative;
 }*/
-

@@ -1,131 +1,138 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="my-stylesheet_blog.css">
     <title>Vivian Fialho</title>
   </head>
   <body>
-  	<div id="container">    
-  		<div id="header">
-           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
-           <ul>
-               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
-               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
-               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
-               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
-               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
-               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
-               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
-               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
-               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
-          </ul>     
-      </div>
-      <div id="left">
-          <ul>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Class x Module</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Stereotype Threads</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t7-JavaScript.html>Loops: Ruby x JavaScript</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c7-values.html>Thinking about values</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t8-tech.html>Regular Expressions</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c8-conflict.html>Handling Conflicts</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c9-questions.html>Asking good technical questions</a></li>
-          </ul>
-      </div>
-      <div id="right">
-           <h2>Regular Expressions</h2>
-           <h2 id="date">November 30, 2014</h2>
-           <div id="content">
-              <p>For this week's blog I chose a topic that I considered very useful and powerful: regular expression.
+    <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+    <div class="nav">    
+      <div class="container">	
+        <ul class="nav nav-pills pull-left">
+          <li><a href=http://vivivf.github.io/about/index.html>About</a></li>
+          <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+          <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+          <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+          <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2</a></li>
+          <li><a href=http://vivivf.github.io/CheatSheet/cheatsheet.html>HTML Cheat Sheet</a></li>
+        </ul>
+<!--         <ul class="pull-right">
+          <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+          <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+          <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+          <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+        </ul>   -->   
+    	</div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h3>Regular Expressions</h3>
+        <h5>November 30, 2014</h5>
+        <p>For this week's blog I chose a topic that I considered very useful and powerful: regular expression.</p>
 
-Have you ever needed to look for a specific word in a long text and replace it for something else? Have you ever wanted to find all the words that match a specific pattern? I'm pretty sure the answer is yes and the good news is: regular expressions can help you with that.
+        <p>Have you ever needed to look for a specific word in a long text and replace it for something else? Have you ever wanted to find all the words that match a specific pattern? I'm pretty sure the answer is yes and the good news is: regular expressions can help you with that.</p>
 
-Regular expression, or regex for short, is used to search texts that match a specific pattern. The pattern is described by the expression, which is nothing more than a group of characters or wildcards. It takes time to get used to regular expressions, since it is not easy to identify what the patterns are describing, but the good thing is that there is plenty of documentation in the web about regex. 
+        <p>Regular expression, or regex for short, is used to search texts that match a specific pattern. The pattern is described by the expression, which is nothing more than a group of characters or wildcards. It takes time to get used to regular expressions, since it is not easy to identify what the patterns are describing, but the good thing is that there is plenty of documentation in the web about regex. </p>
 
-Many programming languages support regex, but they can have slight differences in the implementation, so when using regex be aware of that and make sure you are using the correct syntax.
+        <p>Many programming languages support regex, but they can have slight differences in the implementation, so when using regex be aware of that and make sure you are using the correct syntax.</p>
 
-Before we start playing with some examples, let's talk about some basic definitions.
+        <p>Before we start playing with some examples, let's talk about some basic definitions.</p>
 
-The expressions are formed by literal and metacharacters. Literal characters are all the characters that do not have a special meaning, so they are literally the characters that we want to find. Examples of literal characters are: A, 1, ! 
-Metacharacters have special meaning, so they cannot be used as literal in the the search expression. Examples of metacharacters are: ^, \, $, * The metacharaters can be identified as literal using what we call escape. The metacharacter \ is used to escape other metacharacters. So, if you want to look for $20 in a text, the expression would look like this: \$20. Note that the \ metacharacter is placed before the $. In this way, the $ will be interpreted as a literal character.
+        <p>The expressions are formed by literal and metacharacters. Literal characters are all the characters that do not have a special meaning, so they are literally the characters that we want to find. Examples of literal characters are: A, 1, ! 
+        Metacharacters have special meaning, so they cannot be used as literal in the the search expression. Examples of metacharacters are: ^, \, $, * The metacharaters can be identified as literal using what we call escape. The metacharacter \ is used to escape other metacharacters. So, if you want to look for $20 in a text, the expression would look like this: \$20. Note that the \ metacharacter is placed before the $. In this way, the $ will be interpreted as a literal character.</p>
 
-The metacharacters can have different meanings depending on how they are combined and/or positioned in the expression, so it is difficult to make a list explaining what each one does. I prefer to give some examples to try to clarify the syntax, so let's start.
+        <p>The metacharacters can have different meanings depending on how they are combined and/or positioned in the expression, so it is difficult to make a list explaining what each one does. I prefer to give some examples to try to clarify the syntax, so let's start.</p>
 
-<span>2.0.0-p451 :117 > "Testing REGEX!!!".match(/(Test)/)
+<pre><code>2.0.0-p451 :117 > "Testing REGEX!!!".match(/(Test)/)
  => # MatchData "Test" 1:"Test"
-</span>
+</code></pre>
 
-This is a ruby example. It is using the method match with a regular expression. As you can see, the result of the command was "Test", since the expression was only looking for the Test text in the string "Testing REGEX!!!". What if we want to filter only the capital letters after the space, in this case, the REGEX text. 
+        <p>This is a ruby example. It is using the method match with a regular expression. As you can see, the result of the command was "Test", since the expression was only looking for the Test text in the string "Testing REGEX!!!". What if we want to filter only the capital letters after the space, in this case, the REGEX text. </p>
 
-<span>2.0.0-p451 :121 > "Testing REGEX!!!".match(/\s([A-Z]*)/)
- => #MatchData " REGEX" 1:"REGEX"></span>
+<pre><code>2.0.0-p451 :121 > "Testing REGEX!!!".match(/\s([A-Z]*)/)
+ => #MatchData " REGEX" 1:"REGEX"></code></pre>
  
- The command above is using the shorthand character \s to matches a whitespace. After the \s there is the metacharacter [ ], which is used to matches a letter from A to Z. The [ ] matches only one occurrence, so if we don't use the * metacharacter, the result will be "R". See bellow:
+        <p>The command above is using the shorthand character \s to matches a whitespace. After the \s there is the metacharacter [ ], which is used to matches a letter from A to Z. The [ ] matches only one occurrence, so if we don't use the * metacharacter, the result will be "R". See bellow:</p>
 
-<span>2.0.0-p451 :127 > "Testing REGEX!!!".match(/\s([A-Z])/)
- => #MatchData " R" 1:"R"></span>
+<pre><code>2.0.0-p451 :127 > "Testing REGEX!!!".match(/\s([A-Z])/)
+ => #MatchData " R" 1:"R"></code></pre>
 
-We could also use the metacharacter ^ inside the brackets to negates the expression, so if we only want the capital letters, the expression would be [^a-z]. Check it out:
+        <p>We could also use the metacharacter ^ inside the brackets to negates the expression, so if we only want the capital letters, the expression would be [^a-z]. Check it out:</p>
 
-<span>2.0.0-p451 :128 > "Testing REGEX!!!".match(/\s([^a-z]*)/)
- => #MatchData " REGEX!!!" 1:"REGEX!!!"></span>
+<pre><code>2.0.0-p451 :128 > "Testing REGEX!!!".match(/\s([^a-z]*)/)
+ => #MatchData " REGEX!!!" 1:"REGEX!!!"></code></pre>
 
-The result is almost the same, the difference is that here it includes the !!!, since the metacharacter is matching everything except by the a-z range.
+        <p>The result is almost the same, the difference is that here it includes the !!!, since the metacharacter is matching everything except by the a-z range.</p>
 
-As mentioned above, the metacharacters can have different meanings depending on their position in the expression. The ^ is a good example. Take a look at the following example.
+        <p>As mentioned above, the metacharacters can have different meanings depending on their position in the expression. The ^ is a good example. Take a look at the following example.</p>
 
-<span>2.0.0-p451 :147 > "Testing REGEX!!!".match(/(^T\w*)/)
- => #MatchData "Testing" 1:"Testing"></span>
+<pre><code>2.0.0-p451 :147 > "Testing REGEX!!!".match(/(^T\w*)/)
+ => #MatchData "Testing" 1:"Testing"></code></pre>
 
-Here the ^T is matching everything that starts with T, so the meaning of the ^ metacharacter outside the brackets is different. The /w is a shorthand that matches any character in the range 0 - 9, A - Z and a - z. The result is Testing, since we are matching the first letter equal to T and all the characters in the range 0 - 9, A - Z and a - z. As there is a space in the middle, the rest of the text is not part of the result.
+        <p>Here the ^T is matching everything that starts with T, so the meaning of the ^ metacharacter outside the brackets is different. The /w is a shorthand that matches any character in the range 0 - 9, A - Z and a - z. The result is Testing, since we are matching the first letter equal to T and all the characters in the range 0 - 9, A - Z and a - z. As there is a space in the middle, the rest of the text is not part of the result.</p>
  
-In the case we wanted to match the whole sentence, we could use:
+        <p>In the case we wanted to match the whole sentence, we could use:</p>
 
-<span>2.0.0-p451 :149 > "Testing REGEX!!!".match(/(^T\w*)\s([^a-z]*)/)
- => #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX!!!"></span>
+<pre><code>2.0.0-p451 :149 > "Testing REGEX!!!".match(/(^T\w*)\s([^a-z]*)/)
+ => #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX!!!"></code></pre>
 
-or
+        <p>or</p>
 
-<span>2.0.0-p451 :154 > "Testing REGEX!!!".match(/(\w*)\s(\w*!!!)/)
- => #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX!!!"></span>
+<pre><code>2.0.0-p451 :154 > "Testing REGEX!!!".match(/(\w*)\s(\w*!!!)/)
+ => #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX!!!"></code></pre>
 
-In the second example I included the ! character since the \w does not match this kind of character. There are plenty of ways to do that, here are some of them:
+        <p>In the second example I included the ! character since the \w does not match this kind of character. There are plenty of ways to do that, here are some of them:</p>
 
-<span>2.0.0-p451 :160 >"Testing REGEX!!!".match(/(\w*)\s(\w*)(!{3})/)
-=> #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX" 3:"!!!"></span>
+<pre><code>2.0.0-p451 :160 >"Testing REGEX!!!".match(/(\w*)\s(\w*)(!{3})/)
+=> #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX" 3:"!!!"></code></pre>
 
-In this case the {3} is specifying that the ! should appear exactly 3 times to be matched. If we change the number to 4 it will not match.
+        <p>In this case the {3} is specifying that the ! should appear exactly 3 times to be matched. If we change the number to 4 it will not match.</p>
 
-<span>2.0.0-p451 :169 > "Testing REGEX!!!".match(/(\w*)\s(\w*)(!+)/)
- => #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX" 3:"!!!"></span>
+<pre><code>2.0.0-p451 :169 > "Testing REGEX!!!".match(/(\w*)\s(\w*)(!+)/)
+ => #MatchData "Testing REGEX!!!" 1:"Testing" 2:"REGEX" 3:"!!!"></code></pre>
 
-The metacharacter +(plus) matches when the preceding character occurs 1 or more times, as the ! occurs 3 times, it will match.
+        <p>The metacharacter +(plus) matches when the preceding character occurs 1 or more times, as the ! occurs 3 times, it will match.</p>
 
-Now, let's see a more useful example. Imagine that you have a list of contacts, but you want to select only the telephone number. If all the phone numbers have the same pattern, we can use a regular expression to filter them. Here is how we can do that:
+        <p>Now, let's see a more useful example. Imagine that you have a list of contacts, but you want to select only the telephone number. If all the phone numbers have the same pattern, we can use a regular expression to filter them. Here is how we can do that:</p>
 
-<span>2.0.0-p451 :201 > "John Lake (555) 123-4567".match(/\(\d{3}\) \d{3}-\d{4}/)
- => #MatchData "(555) 123-4567"></span>
+<pre><code>2.0.0-p451 :201 > "John Lake (555) 123-4567".match(/\(\d{3}\) \d{3}-\d{4}/)
+ => #MatchData "(555) 123-4567"></code></pre>
 
-The string of the example has a name and a number. The expression is looking only for the number. We start from the ( character. As it is a special character and we want it to be interpreted as literal character, we use the back slash \ to escape it. After that, the \d shorthand is used to match the digits and the {3} is fixing the number of digits to 3. The next step is to use the \ again to scape the closing ). The \d{3} is mattching the next 3 digits after the space and the last part is matching the last 4 digits after the -. The result returned the number since it is exactly in this format. If the number was not in this format, the command would return nil.
+        <p>The string of the example has a name and a number. The expression is looking only for the number. We start from the ( character. As it is a special character and we want it to be interpreted as literal character, we use the back slash \ to escape it. After that, the \d shorthand is used to match the digits and the {3} is fixing the number of digits to 3. The next step is to use the \ again to scape the closing ). The \d{3} is mattching the next 3 digits after the space and the last part is matching the last 4 digits after the -. The result returned the number since it is exactly in this format. If the number was not in this format, the command would return nil.</p>
 
-Regex is very powerful and useful to parse any text data. This post covered some basic and simple regular expressions, but there is much more to explore. 
+        <p>Regex is very powerful and useful to parse any text data. This post covered some basic and simple regular expressions, but there is much more to explore. </p>
+        
+      </div> 
+    </div>
+    
 
-              </p>
-           </div>
-           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
-       </div>
-       <div id="footer">
-          <a href="#">Contact Me</a>
-       </div>
-  </div>
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+              
+            <div class="col-md-8">
+              <p class="first">LOOKING FOR SOMETHING?</p>
+              <form class="navbar-form navbar-left second" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+              </form>
+            </div>
+
+            <div class="col-md-4">
+              <p class="first" id="custom">SOCIAL:</p>
+              <ul class="pull-rigth" id="custom2">
+                <a href=https://twitter.com/fialho_vivian><img src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+                <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+                <a href=https://github.com/vivivf><img src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+                <a href=https://www.facebook.com/vivian.fialho.1><img src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+              </ul> 
+            </div> 
+          </div>
+        </div>
+    </div>
+
   </body>
 </html>
-

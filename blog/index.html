@@ -1,70 +1,172 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="blog-index-stylesheet.css">
     <title>Vivian Fialho</title>
   </head>
   <body>
-  	<div id="container">    
-  		<div id="header">
-           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
-           <ul>
-               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
-               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
-               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
-               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
-               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
-               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
-               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
-               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
-               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
-          </ul>     
+    <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+    <div class="nav">    
+      <div class="container">	
+        <ul class="nav nav-pills pull-left">
+          <li><a href=http://vivivf.github.io/about/index.html>About</a></li>
+          <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+          <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+          <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+          <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2</a></li>
+          <li><a href=http://vivivf.github.io/CheatSheet/cheatsheet.html>HTML Cheat Sheet</a></li>
+        </ul>
+      <!--   <ul class="pull-right">
+          <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+          <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+          <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+          <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+        </ul>      -->
     	</div>
-      <div id="left">
-          <ul>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Class x Module</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Stereotype Threads</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t7-JavaScript.html>Loops: Ruby x JavaScript</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c7-values.html>Thinking about values</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t8-tech.html>Regular Expressions</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c8-conflict.html>Handling Conflicts</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c9-questions.html>Asking good technical questions</a></li>
-          </ul>
-      </div>
-      <div id="right">
-           <h2>Git & GitHub: basic concepts</h2>
-           <h2 id="date">October 10, 2014</h2>
-           <div id="content">
-              <p>This is the first week of DBC and I'm glad I have already learned a lot. I've used Git and GitHub before, but the concepts were not very clear to me. Now I feel more confident to execute the commands and make changes without "breaking" anything. Here are some basic concepts that we went through during the course of the week.
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <p class="title">Tech stuff</p>
+                  <div class="text">
+                    <h3>Git & GitHub: basic concepts</h3>
+                    <h5>October 10, 2014</h5>
+                    <p>This is the first week of DBC and I'm glad I have already learned a lot. I've used Git and GitHub before, but the concepts were not very clear to me. </p>
+                    <a href=http://vivivf.github.io/blog/t1-git-blog.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Margin, Border & Padding</h3>
+                    <h5>October 19, 2014</h5>
+                    <p>During this week, we were introduced to HTML and CSS and our challenge was to create a personal website. The website you are navigating now is the result of this challenge :)</p>
+                    <a href=http://vivivf.github.io/blog/t2-css-design.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Array x Hash</h3>
+                    <h5>October 23, 2014</h5>
+                    <p>In many situations of our everyday life we see the need of organizing information. Some people have a list of contacts to easily find the phone number of a specific friend, others like to organize their music</p>
+                    <a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Map Enumerable Method</h3>
+                    <h5>November 2, 2014</h5>
+                    <p>Last week we talked about collection objects, more specifically about arrays and hashes. This week we'll talk about a method called map. This method is part of the Enumerable module, which is widely used</p>
+                    <a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>A little bit about Classes</h3>
+                    <h5>November 9, 2014</h5>
+                    <p>In the real world we are surrounded by objects. Your computer is an object, your car is an object, your watch is an object. All the objects have their own characteristics and behaviors. Some objects are of the</p>
+                    <a href=http://vivivf.github.io/blog/t5-ruby-classes.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Class x Module</h3>
+                    <h5>November 16, 2014</h5>
+                    <p>We have talked about classes last week but only to refresh our memory here is one of the definitions for class:
+                        "In object-oriented programming, a class is a construct that is used to create instances</p>
+                    <a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Loops: Ruby x JavaScript</h3>
+                    <h5>November 21, 2014</h5>
+                    <p>This week we started to dive into JavaScript. Having spent the last four weeks working with Ruby I can say that they look very different to me.</p>
+                    <a href=http://vivivf.github.io/blog/t7-JavaScript.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Regular Expressions</h3>
+                    <h5>November 30, 2014</h5>
+                    <p>For this week's blog I chose a topic that I considered very useful and powerful: regular expression.
+                      Have you ever needed to look for a specific word in a long text and replace it for something else?</p>
+                    <a href=http://vivivf.github.io/blog/t8-tech.html>Read More...</a>
+                  </div>
+              </div>
 
-<b>What are the benefits of version control?</b>
+              <div class="col-md-6">
+                  <p class="title">Evetything else...</p>
+                  <div class="text">
+                    <h3>DBC Culture</h3>
+                    <h5>October 10, 2014</h5>
+                    <p>Well, where do I start? So many things running through my mind after this week, and I know that there is muuuuch more to come...
+                    <br></br></p>
+                    <a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Thinking & Learning Styles</h3>
+                    <h5>October 26, 2014</h5>
+                    <p>During the preparation for starting my journey at Devbootcamp I took a test to identify my thinking style. The result showed that I'm a concrete sequential thinker, which is exactly what I was expecting.</p>
+                    <a href=http://vivivf.github.io/blog/c3_thinking-style.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Tech World Issues</h3>
+                    <h5>November 2, 2014</h5>
+                    <p>With the popularization of internet and social networks, data is becoming each day a more valuable asset. Companies are investing in the collection and analysis of user data in order to know better their</p>
+                    <a href=http://vivivf.github.io/blog/c4-tech-issues.html>Read More...</a>
+                  </div>
+                   <div class="text">
+                    <h3>Pairing challenges</h3>
+                    <h5>November 9, 2014</h5>
+                    <p>We are at the fifth week of the DBC Phase 0 and up to now I've paired with several people. Although I would love to pair again with some of the people I've paired, I'm trying to pair with different people every</p>
+                    <a href=http://vivivf.github.io/blog/c5-feedback.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Stereotype Threads</h3>
+                    <h5>November 16, 2014</h5>
+                    <p>Stereotype threat is an interesting subject to discuss. As a woman who studied electrical engineer and has always worked with technology I can say that being "different" is at least intimidating.</p>
+                    <a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Thinking about values</h3>
+                    <h5>November 21, 2014</h5>
+                    <p>This week DBC asked us to reflect about our values and to think about how they can be used to mediate stereotype threat, in case we feel it.</p>
+                    <a href=http://vivivf.github.io/blog/c7-values.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Handling Conflicts</h3>
+                    <h5>November 30, 2014</h5>
+                    <p>Some years ago I was on a business travel with a coworker that is also a very close friend. There was a holiday right after the day we were supposed to finish our job, so we decided to extend our stay</p>
+                    <a href=http://vivivf.github.io/blog/c8-conflict.html>Read More...</a>
+                  </div>
+                  <div class="text">
+                    <h3>Asking good technical questions</h3>
+                    <h5>December 03, 2014</h5>
+                    <p>The art of programming involves a lot of research, so knowing how to look and ask for information is crucial for someone who intends to work with software development.</p>
+                    <a href=http://vivivf.github.io/blog/c9-questions.html>Read More...</a>
+                  </div>
+              </div>
 
-Version control is the process of managing changes of documents/files. Developers use version control to keep track of changes made in the code. It is much easier to maintain and work on a code when it is possible to track what was changed, when the change was made and by whom. The version control allows the developers to make changes and tests in a "copy" of the original code, so in the case of failures it is easy to rollback to the previous version. It is also useful in the case that there is a group of people working in the same code, since it is possible to merge the versions with the individual contributions to create a new one.
 
-<b>How does git help you keep track of changes</b>?
+          </div> 
+      </div> 
+    </div>  
 
-Git is a software control system that has many features that make the developer's life easier when it comes to tracking changes in the code. It is possible to track which files were changed, created and deleted if compared to a specific version. The changes can be saved or discarded. You can also rollback a change that was already saved, since it creates a checkpoint every time a change is saved.
-Git also allows the creation of "branches", that are copies of the repository. Different people can work in different branches and merge their branches to have a single version with all the contributions. 
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+              
+            <div class="col-md-8">
+              <p class="first">LOOKING FOR SOMETHING?</p>
+              <form class="navbar-form navbar-left second" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+              </form>
+            </div>
 
-<b>Why use GitHub to store your code?</b>
+            <div class="col-md-4">
+              <p class="first" id="custom">SOCIAL:</p>
+              <ul class="pull-rigth" id="custom2">
+                <a href=https://twitter.com/fialho_vivian><img src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+                <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+                <a href=https://github.com/vivivf><img src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+                <a href=https://www.facebook.com/vivian.fialho.1><img src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+              </ul> 
+            </div> 
+          </div>
+        </div>
+    </div>
 
-GitHub is a the remote repository that can be accessed by anyone who has an internet connection and of course, permission to access the repository. GitHub is very useful for sharing code and for working in groups, since several people can access the same remote repository and work in the same project by dowloading/uploading the changes from/to each individual local repository. </p>
-           </div>
-           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
-       </div>
-       <div id="footer">
-          <a href="#">Contact Me</a>
-       </div>
-  </div>
+
   </body>
 </html>
-

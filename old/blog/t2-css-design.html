@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <title>Vivian Fialho</title>
+  </head>
+  <body>
+  	<div id="container">    
+  		<div id="header">
+           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+           <ul>
+               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
+               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
+               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+          </ul>     
+      </div>
+      <div id="left">
+          <ul>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Class x Module</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Stereotype Threads</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t7-JavaScript.html>Loops: Ruby x JavaScript</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c7-values.html>Thinking about values</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t8-tech.html>Regular Expressions</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c8-conflict.html>Handling Conflicts</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c9-questions.html>Asking good technical questions</a></li>
+          </ul>
+      </div>
+      <div id="right">
+           <h2>Margin, Border & Padding 
+            What are the differences?</h2>
+           <h2 id="date">October 19, 2014</h2>
+           <div id="content">
+              <p> During this week, we were introduced to HTML and CSS and our challenge was to create a personal website. The website you are navigating now is the result of this challenge :) 
+
+If you have never created a website from the scratch and have a ton of doubts about how to do some formatting, you are in the right place! In this blog post I&#39ll cover only some of the CSS properties, but it is a good start for those who want to understand some basic concepts!
+
+As most of you probably know, HTML stands for Hyper Text Markup Language and it is used to make content available in a webpage. The CSS (Cascading Style Sheets)  is responsible for describing the look and formatting of a document written in a markup language. These are veeeery high level definitions, but it is not the objective of this blog post to talk extensively about HTML and CSS, since this is a subject for a whole book, so let&#39s focus on 3 important CSS properties: margin, padding and border. 
+
+This was the first time I used CSS, and to be honest, in the beginning I was a little bit lost. I kept asking myself &quotWhat the hell I&#39m doing wrong? Why can&#39t I move or position my elements? Why do I mess everything when I try to configure only one element&quot. If you have the same doubts, I hope this blog will help you to clarify them.
+
+The first important thing to understand when talking about visual formatting is the box model. According to the box model, every element in the page is a rectangular box. Each box is composed by the content itself (image, text, etc), surrounded by the padding, border and margin. The figure bellow illustrates the box model.
+
+<img src="http://vivivf.github.io/blog/imgs/boxbasic.jpeg" />
+
+As you can see, the margin, border and padding can be broken down into top, right, bottom and left, which means that you can configure each one individually. 
+
+Now that the box model was presented, let&#39s move to the properties.
+
+
+<b>Padding</b>
+
+It is the space between the content and the border. 
+Let&#39s say you are going to create a menu and you want to have a text with a border to represent your menu options, but you don&#39t want that border to be too close to the text. In this case you can use the padding to add space between the text and the border. Take a look in the example bellow:
+
+<img src="http://vivivf.github.io/blog/imgs/padding_example.png" />
+<img src="http://vivivf.github.io/blog/imgs/padding_example_pic.png" />
+
+This is the menu of this website. As you can see, the space between the border and the top/bottom is different from the space between the border and the left/right edges. This is because I configured the padding of 0.1em for the bottom and top and 0.8em for the left and right. 
+The padding property accepts as input from 1 to 4 values. If only one value is specified  it will apply the same padding for all the sides, so &quotpadding:3em&quot means that 3em will be added between the border and all the sides of the content. 
+If more than one value is specified, it starts at the top and then moves clockwise until it reaches the left. If 2 values are given, like in the image, it will apply the first value for the top and bottom and the second value for the right and left.
+
+The padding value can also be a percentage that is calculated with respect to the width of the generated box&#39s containing block.
+
+Some more examples:
+
+<img src="http://vivivf.github.io/blog/imgs/padding2_example.png" />
+
+
+As mentioned before, you can configure the padding for each side individually, so if you don’t want to configure all the sides, you can use the following properties:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+
+<b>Border</b>:
+
+The border is right in the middle of the box model and it indicates the &quotedge&quot between padding and margin. It can also be broken down into border-top, border-right, border-bottom and border-left.
+The border characteristics are: width, color, and style and they can be configured for every element.
+
+The available values for the width are:
+
+thin, medium, thick and <length>, when the border&#39s thickness has an explicit value. Explicit border widths cannot be negative.
+
+For the color there are only two options, one is to specify a color either by name or by its hexadecimal code and the other one is to use &quottransparent&quot. In this case the border will be transparent, but it will exist if the width is different from zero.
+
+The style characteristic has the following options:
+
+<b>none:</b> No border; the computed border width is zero.
+<b>hidden:</b> Same as 'none', except in terms of border conflict resolution for table elements.
+<b>dotted:</b> The border is a series of dots.
+<b>dashed:</b> The border is a series of short line segments.
+<b>solid:</b> The border is a single line segment.
+<b>double:</b> The border is two solid lines. The sum of the two lines and the space between them equals the value of 'border-width'.
+<b>groove:</b> The border looks as though it were carved into the canvas.
+<b>ridge:</b> The opposite of 'groove': the border looks as though it were coming out of the canvas.
+<b>inset:</b> The border makes the box look as though it were embedded in the canvas.
+<b>outset:</b> The opposite of 'inset': the border makes the box look as though it were coming out of the canvas.
+ 
+Since a picture is worth a thousand words, see the example bellow:
+
+
+<img src="http://vivivf.github.io/blog/imgs/border_example.png" />
+
+
+Another interesting property is the border-radius, which enables us to round the corners of an element. It accepts length units and percentage. A single value will round all four corners of an element equally; two values will round the top-left/bottom-right and top-right/bottom-left corners in that order; four values will round the top-left, top-right, bottom-right, and bottom-left corners in that order.
+
+It can also be broken down for each side of the box, but in this case the options are: top-left, top-right, bottom-right, bottom-left.
+
+Here are some examples:
+
+<span>div {
+  border-radius: 5px;
+}
+
+div {
+  border-radius: 50%;
+}
+
+div {
+  border-radius: 15px 75px;
+}</span>
+
+<img src="http://vivivf.github.io/blog/imgs/border2_example.png" />
+
+<b>Margin</b>:
+
+And we are finally in the last piece of the box model, the margin. 
+It is very similar to the padding but instead of being the space between the element and the border, it is the space between the border and the other elements. The margin property allows us to set the amount of space that surrounds an element.
+
+As padding and border, the margin also can be broken down into top, right, bottom and left.
+
+The margin value can be specified as the following:
+
+<length> Specifies a fixed width. Negative values are allowed.
+<percentage> The percentage is calculated with respect to the width of the generated box&#39s containing block. Note that this is true for 'margin-top' and 'margin-bottom' as well. 
+auto: 
+
+Here&#39s a visual demonstration of CSS margins:
+
+<img src="http://vivivf.github.io/blog/imgs/margin_example.png" />
+
+As the padding, the margin can take from 1 to 4 values, and it uses the same order as padding, starting from the top and moving clockwise. Here are some code examples to solidify the understanding:
+
+<span>
+body { margin: 2em }         /* all margins set to 2em */
+body { margin: 1em 2em }     /* top & bottom = 1em, right & left = 2em */
+body { margin: 1em 2em 3em } /* top=1em, right=2em, bottom=3em, left=2em */
+
+body { /*each margin configured individually*/
+  margin-top: 1em;
+  margin-right: 2em;
+  margin-bottom: 3em;
+  margin-left: 2em;        
+}
+</span>
+Well, this is it for today! I hope you enjoyed the reading!!! </p>
+           </div>
+           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
+       </div>
+       <div id="footer">
+          <a href="#">Contact Me</a>
+       </div>
+  </div>
+  </body>
+</html>
+

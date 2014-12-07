@@ -13,36 +13,74 @@ h1 a:hover, a:visited{
 	text-decoration: none;
 }
 
+/*.nav{
+	padding-bottom: 5px;
+}*/
+
 .nav-pills{
 	position: relative;
 	left:-120px;
 	font-size: 20px;
 }
 
-
 .nav .nav-pills > li > a {
 	color: #000080;
 }
+
 
 /*.pull-right img{
 	height: 3em;
     width: 3em;
     position: relative;
-    right: -20px;
+    left: 100px;
 }*/
-
-
-.jumbotron .container .row .col-md-8 > p{
-	color: #2F4F4F;
-	font-size: 20px;
-	text-align: justify;
-	font-weight: bold;
-	font-family: "Palatino Linotype";
-}
 
 
 .jumbotron{
 	background-color: #DCDCDC;
+	margin-top:0;
+	padding-top: 0;
+	margin-bottom: 10px;
+	padding-bottom: 0;
+}
+
+.jumbotron .container{
+	background-color: white;
+}
+
+.jumbotron .container >h3{
+	color:#1E90FF;
+}
+
+.jumbotron .container >h5{
+	padding-bottom: 15px;
+}
+
+.jumbotron .container > p{
+	font-size:17px;
+	text-align: justify;
+/*	padding-top: 10px;*/
+}
+
+.jumbotron .container > img{
+	width: 50%;
+	margin-left: 25%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*.jumbotron .container > p > span{
+	color:blue;
+	font-family: monospace;
+	font-size: 14px;
+	text-align: left;
+}*/
+
+pre code{
+	color:#778899;
+	text-align: left;
+	padding:0;
+	margin: 0;
 }
 
 .footer img{
@@ -80,11 +118,16 @@ h1 a:hover, a:visited{
 	left:20px;
 }
 
+.footer{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 /*.footer{
 	font-size: 20px;
     text-align: right;
     text-decoration: underline;
     right:30px;
     position: relative;
+    bottom: -20px;
 }*/
-

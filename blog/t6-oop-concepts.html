@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="my-stylesheet_blog.css">
     <title>Vivian Fialho</title>
   </head>
   <body>
-  	<div id="container">    
-  		<div id="header">
-           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
-           <ul>
-               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
-               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
-               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
-               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
-               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
-               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
-               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
-               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
-               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
-          </ul>     
-      </div>
-      <div id="left">
-          <ul>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Class x Module</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Stereotype Threads</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t7-JavaScript.html>Loops: Ruby x JavaScript</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c7-values.html>Thinking about values</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/t8-tech.html>Regular Expressions</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c8-conflict.html>Handling Conflicts</a></li>
-            <li class="menu"><a href=http://vivivf.github.io/blog/c9-questions.html>Asking good technical questions</a></li>
-          </ul>
-      </div>
-      <div id="right">
-           <h2>Class x Module</h2>
-           <h2 id="date">November 9, 2014</h2>
-           <div id="content">
-              <p>We have talked about classes last week but only to refresh our memory here is one of the definitions for class:
+    <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+    <div class="nav">    
+      <div class="container">	
+        <ul class="nav nav-pills pull-left">
+          <li><a href=http://vivivf.github.io/about/index.html>About</a></li>
+          <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+          <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+          <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+          <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2</a></li>
+          <li><a href=http://vivivf.github.io/CheatSheet/cheatsheet.html>HTML Cheat Sheet</a></li>
+        </ul>
+<!--         <ul class="pull-right">
+          <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+          <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+          <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+          <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+        </ul>   -->   
+    	</div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h3>Class x Module</h3>
+        <h5>November 16, 2014</h5>
+        <p>We have talked about classes last week but only to refresh our memory here is one of the definitions for class:</p>
 
-"In object-oriented programming, a class is a construct that is used to create instances of itself - referred to as class instances, class objects, instance objects or simply objects. A class defines constituent members which enable its instances to have state and behavior."
+        <p>"In object-oriented programming, a class is a construct that is used to create instances of itself - referred to as class instances, class objects, instance objects or simply objects. A class defines constituent members which enable its instances to have state and behavior."</p>
 
-Modules are similar to classes, which means they also enable objects to have behavior through the definition of methods, the difference is that unlike classes, modules don't have instances. An object and/or a class that includes a module, will have access to its methods and constants. 
-Modules can provide functionality across multiple classes and/or objects so, they are perfect to be used when objects from different classes have to implement the same behavior.
+        <p>Modules are similar to classes, which means they also enable objects to have behavior through the definition of methods, the difference is that unlike classes, modules don't have instances. An object and/or a class that includes a module, will have access to its methods and constants.</p> 
+        
+        <p>Modules can provide functionality across multiple classes and/or objects so, they are perfect to be used when objects from different classes have to implement the same behavior.</p>
 
-A good example is the Math module. It has constants, like Pi, and methods that define mathematical calculations, like sqrt(number), which returns the square foot of the specified number. The Math module can be used by class/object that includes it.
+        <p>A good example is the Math module. It has constants, like Pi, and methods that define mathematical calculations, like sqrt(number), which returns the square foot of the specified number. The Math module can be used by class/object that includes it.</p>
 
-Let's see how a method is defined and how to include it. 
+        <p>Let's see how a method is defined and how to include it. </p>
 
-<span>module FirstModule
+<pre><code>module FirstModule
     def testing_module
       p "Testing our first module"
     end
-end</span>
+end</code></pre>
 
-This is how a method definition looks like. It is very similar to the class, we only replaced the word "class" by "module"
+        <p>This is how a method definition looks like. It is very similar to the class, we only replaced the word "class" by "module".</p>
 
-So now, we are going to include this method in a class:
+        <p>So now, we are going to include this method in a class:</p>
 
-<span>class ModuleTester
+<pre><code>class ModuleTester
     include FirstModule
-end</span>
+end</code></pre>
 
-And finally, we'll create an instance of the class ModuleTester and try to call the method testing_module
+        <p>And finally, we'll create an instance of the class ModuleTester and try to call the method testing_module:</p>
 
-<span>module_test = ModuleTester.new
-module_test.testing_module</span>
+<pre><code>module_test = ModuleTester.new
+module_test.testing_module</code></pre>
 
-Here is the output:
+        <p>Here is the output:</p>
 
-<span>2.0.0-p451 :543 > "Testing our first module"</span>
+<pre><code>2.0.0-p451 :543 > "Testing our first module"</code></pre>
 
-As you can see, the module_test object can access the method testing_module.
+        <p>As you can see, the module_test object can access the method testing_module.</p>
 
-This is, of course, a very simple demonstration of the use of modules, but it serves to show that modules can expand considerably the set of messages to which an object can respond.
+        <p>This is, of course, a very simple demonstration of the use of modules, but it serves to show that modules can expand considerably the set of messages to which an object can respond.</p>
 
-As Ruby provides single inheritance, where a subclass is allowed only one parent superclass, modules play an important role when it comes to allowing the objects to have a broader scope.
+        <p>As Ruby provides single inheritance, where a subclass is allowed only one parent superclass, modules play an important role when it comes to allowing the objects to have a broader scope.</p>
+        
+      </div> 
+    </div>
+    
 
-              </p>
-           </div>
-           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
-       </div>
-       <div id="footer">
-          <a href="#">Contact Me</a>
-       </div>
-  </div>
+    <div class="footer">
+        <div class="container">
+          <div class="row">
+              
+            <div class="col-md-8">
+              <p class="first">LOOKING FOR SOMETHING?</p>
+              <form class="navbar-form navbar-left second" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+              </form>
+            </div>
+
+            <div class="col-md-4">
+              <p class="first" id="custom">SOCIAL:</p>
+              <ul class="pull-rigth" id="custom2">
+                <a href=https://twitter.com/fialho_vivian><img src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+                <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+                <a href=https://github.com/vivivf><img src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+                <a href=https://www.facebook.com/vivian.fialho.1><img src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+              </ul> 
+            </div> 
+          </div>
+        </div>
+    </div>
+
   </body>
 </html>
-

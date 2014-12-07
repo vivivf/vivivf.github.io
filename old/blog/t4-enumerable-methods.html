@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <title>Vivian Fialho</title>
+  </head>
+  <body>
+  	<div id="container">    
+  		<div id="header">
+           <h1><a href=http://vivivf.github.io/index.html>Vivian Fialho's Blog</a></h1>
+           <ul>
+               <li id="menu1"><a href=http://vivivf.github.io/about/index.html>About</a></li>
+               <li><a href=http://vivivf.github.io/blog/index.html>Blog</a></li>
+               <li><a href=http://vivivf.github.io/projects/index.html>Projects</a></li>
+               <li><a href=http://vivivf.github.io/contact/index.html>Contact</a></li>
+               <li><a href=http://vivivf.github.io/GPS/gps1-2.html>GPS 1.2 Challenge</a></li>
+               <a href=https://twitter.com/fialho_vivian><img id="img1" src="http://vivivf.github.io/blog/imgs/twitter_icon.jpeg" /></a>
+               <a href=http://www.linkedin.com/pub/vivian-fialho/11/19/a3b/><img id="img2" src="http://vivivf.github.io/blog/imgs/linkedin_icon.png" /></a>
+               <a href=https://github.com/vivivf><img id="img3" src="http://vivivf.github.io/blog/imgs/github_icon.png" /></a>
+               <a href=https://www.facebook.com/vivian.fialho.1><img id="img4" src="http://vivivf.github.io/blog/imgs/face_icon.png" /></a>
+          </ul>     
+      </div>
+      <div id="left">
+          <ul>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t1-git-blog.html>Git & GitHub</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c1-chefs-kitchen.html>DBC Culture</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t2-css-design.html>Margin, Border & Padding</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t3-arrays-hashes.html>Array x Hash</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c3_thinking-style.html>Thinking & Learning Styles</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t4-enumerable-methods.html>Map Enumerable Method</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c4-tech-issues.html>Tech World Issues</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t5-ruby-classes.html>A little bit about Classes</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c5-feedback.html>Pairing challenges</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t6-oop-concepts.html>Class x Module</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c6-stereotype-threat.html>Stereotype Threads</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t7-JavaScript.html>Loops: Ruby x JavaScript</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c7-values.html>Thinking about values</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/t8-tech.html>Regular Expressions</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c8-conflict.html>Handling Conflicts</a></li>
+            <li class="menu"><a href=http://vivivf.github.io/blog/c9-questions.html>Asking good technical questions</a></li>
+          </ul>
+      </div>
+      <div id="right">
+           <h2>Map Enumerable Method</h2>
+           <h2 id="date">November 2, 2014</h2>
+           <div id="content">
+              <p>Last week we talked about collection objects, more specifically about arrays and hashes. This week we'll talk about a method called map. This method is part of the Enumerable module, which is widely used by collection objects. But what is a module?
+
+In very few words, a module is a way to pack a bunch of methods and constants together. Ruby's classes can include modules, which means that the objects of a class that includes a module can call the module's methods. Array and hash classes include the Enumerable module, therefore, any array or hash object can call any enumerable method.
+
+Having that said, we know that arrays and hashes can call the method map.
+
+The map method is very useful. It iterates through all the elements of the collection object and creates a different collection object based on the result of the operation specified in the block. Here is the syntax of the command:
+
+<span>map {|item| block}</span> 
+
+Take a look at the example bellow to clarify how the method works:
+
+<span>2.0.0-p451 :629 >   [1,2,3].map{|item| item.to_s}
+ => ["1", "2", "3"] </span>
+
+In this case, the map method will iterate through each array element and execute the "item.to_s" operation for each one. The result will be a new array with all the numbers transformed in strings.
+
+The same result can be achieved with the shorthand notation:
+
+<span>2.0.0-p451 :632 > [1,2,3].map(&:to_s)
+ => ["1", "2", "3"]</span>
+
+As you can see, the result is the same. For ruby beginners maybe the first option is easier, since it is more readable. As Im still not very used with shorthands, I personally prefer the first option, but is always good to know that there are other ways to do the same thing.
+
+Let's see one more example. 
+
+<span>2.0.0-p451 :006 > names=["erick","jonas","kate","julie"]
+ => ["erick", "jonas", "kate", "julie"]
+2.0.0-p451 :007 > names.map{|name| name.capitalize}
+ => ["Erick", "Jonas", "Kate", "Julie"]
+2.0.0-p451 :008 > names
+ => ["Erick", "Jonas", "Kate", "Julie”]</span>
+
+In this example, we used the capitalize method inside the block to capitalize the names. Note that the original array was not modified, which means that map is a non-destructive method.
+
+If you want to modify the array, the method map! should be used. Check it out:
+
+<span>2.0.0-p451 :004 > names.map!{|name| name.capitalize}
+ => ["Erick", "Jonas", "Kate", "Julie"]
+2.0.0-p451 :005 > names
+ => ["Erick", "Jonas", "Kate", "Julie”]</span>
+
+Those are simple examples, but the map method can be very powerful if used wisely. 
+
+This is it for today. I hope you enjoyed the reading!
+
+              </p>
+           </div>
+           <input type="text" name="comment" size="139" placeholder="Enter you comment here:">
+       </div>
+       <div id="footer">
+          <a href="#">Contact Me</a>
+       </div>
+  </div>
+  </body>
+</html>
+
